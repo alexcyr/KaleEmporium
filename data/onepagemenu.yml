@@ -1,0 +1,14 @@
+Home:
+ url: /
+ Default Home:
+  url: /
+ One Page Website:
+  url: /index-one-page.html
+Latest Projects:
+ url: "#projects"
+Features:
+ url: "#features"
+Meet the Team:
+ url: "#team"
+Contact Us:
+ url: "#contact"

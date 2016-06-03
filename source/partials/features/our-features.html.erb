@@ -1,0 +1,27 @@
+<section id="features" style="background-color:#F8F8F8;">
+	<div class="container" >
+		
+		<div class="row mb-md mt-xlg">
+			<div class="col-md-12">
+				<h2 class="heading-primary">Core <strong>Values</strong></h2>
+				<div class="row mb-xlg">
+			<% data.features.each do | key, value| %>
+			<div class="col-sm-4">
+						
+						<div class="feature-box">
+							<div class="feature-box-icon">
+								<i class="fa <%= value.icon %>"></i>
+							</div>
+							<div class="feature-box-info">
+								<h4 class="heading-primary mb-none"><%= key %></h4>
+								<p class="tall" style="font-size:12px; line-height: 16px;"><%= value.description %></p>
+							</div>
+						</div>
+						
+					</div>
+			<% end %>
+		</div>
+				
+		
+	</div>
+</section>

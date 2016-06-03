@@ -1,0 +1,61 @@
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+
+<title><%= page_or_default 'title' %></title>
+
+<meta name="keywords" content="<%= page_or_default 'keywords' %>" />
+<meta name="description" content="<%= page_or_default 'description' %>">
+<meta name="author" content="<%= page_or_default 'author' %>">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="<%= page_or_default 'favicon' %>" type="image/x-icon" />
+<link rel="apple-touch-icon" href="<%= page_or_default 'appletouchicon' %>">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Web Fonts  -->
+<link href="<%= page_or_default 'fonts' %>" rel="stylesheet" type="text/css">
+
+<!-- Vendor CSS -->
+<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.css">
+<link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.css">
+<link rel="stylesheet" href="/vendor/owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="/vendor/owlcarousel/owl.theme.default.min.css">
+<link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.css">
+
+<!-- Theme CSS -->
+<%= stylesheet_link_tag "normalize"%>
+<%= stylesheet_link_tag "theme" %>
+<%= stylesheet_link_tag "theme-elements" %>
+<%= stylesheet_link_tag "theme-blog" %>
+<%= stylesheet_link_tag "theme-shop" %>
+<%= stylesheet_link_tag "theme-animate" %>
+<%= stylesheet_link_tag "styles" %>
+
+<!-- Current Page CSS -->
+<link rel="stylesheet" href="/vendor/rs-plugin/css/settings.css" media="screen">
+<link rel="stylesheet" href="/vendor/circle-flip-slideshow/css/component.css" media="screen">
+
+<!-- Skin CSS -->
+<%= stylesheet_link_tag "skins/default" %>
+
+<!-- Theme Custom CSS 
+<link rel="stylesheet" href="css/custom.css"> -->
+
+<!-- Head Libs -->
+<script src="/vendor/modernizr/modernizr.js"></script>
+
+<!--[if IE]>
+  <link rel="stylesheet" href="css/ie.css">
+<![endif]-->
+
+<!--[if lte IE 8]>
+  <script src="/vendor/respond/respond.js"></script>
+  <script src="/vendor/excanvas/excanvas.js"></script>
+<![endif]-->
+
+<!-- Add Sumo Me for Email Collection -->
+<script src="//load.sumome.com/" data-sumo-site-id="fab2b6bc89852fb5ba1ec85252b9648b54b2de03273ef7f2e7f14f7e9a59068c" async="async"></script>

@@ -1,0 +1,14 @@
+<div class="row mt-xl">
+	<div class="counters counters-text-dark">
+		<% data.counters.each do |key, value| %>
+		<div class="col-md-3 col-sm-6">
+			<div class="counter" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
+				<i class="<%= value.icon %>"></i>
+				<strong data-to="<%= value.value %>" <%if value.append%>data-append="<%= value.append %>"<% end%>>0</strong>
+				<label><%= value.label %></label>
+				<p class="text-color-primary mb-xl"><%= value.benefit %></p>
+			</div>
+		</div>
+		<% end %>
+	</div>
+</div>

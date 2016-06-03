@@ -1,0 +1,57 @@
+<% menu = data.menu %>
+<% if current_page.data.menu %>
+	<% menu = data[current_page.data.menu] %>
+<% end %>
+
+<nav>
+<ul class="nav nav-pills" id="mainNav">
+  <% menu.each do |key, value| %>
+		<li class="dropdown<% if current_page.path == value.url %> active<% end %>" id="dropdownOpen">
+			<% hasSubs = is_parent_menu(value) %>
+
+			<a   class=" <% if hasSubs %>dropdown-toggle <% end %>"  href="<%= value.url %>" ><%= key %><% if value.extrahtml %> <%= value.extrahtml%><% end %></a>
+			<% if hasSubs %>
+			 <ul class="dropdown-menu">
+			 	<% value.each do |subkey, subvalue| %>
+			 		<% next if subkey == 'url'  %>
+			 		<% next if subkey == 'extrahtml'  %>
+			 		<% if is_parent_menu(subvalue) %>
+						<li class="dropdown-submenu">
+							<a href="<%= subvalue.url %>" class="smoothScroll"><%= subkey %><% if subvalue.extrahtml %> <%= subvalue.extrahtml%><% end %></a>
+			 				<ul class="dropdown-menu">
+			 		<% else %>
+			 			<li>
+							<a href="<%= subvalue.url %>"><%= subkey %><% if subvalue.extrahtml %> <%= subvalue.extrahtml%><% end %></a>
+						</li>
+					<% end %>
+					<% if is_parent_menu(subvalue) %>
+							<% subvalue.each do |thirdkey, thirdvalue| %>
+								<% next if thirdkey == 'url' %>
+								<% next if thirdkey == 'extrahtml' %>
+									<% if is_parent_menu(thirdvalue) %>
+										<li class="dropdown-submenu">
+											<a href="<%= thirdvalue.url %>"><%= thirdkey %><% if thirdvalue.extrahtml %> <%= thirdvalue.extrahtml%><% end %></a>
+							 				<ul class="dropdown-menu">
+							 		<% else %>
+							 			<li>
+											<a href="<%= thirdvalue.url %>"><%= thirdkey %><% if thirdvalue.extrahtml %> <%= thirdvalue.extrahtml%><% end %></a>
+										</li>
+									<% end %>
+								<% if is_parent_menu(thirdvalue) %>
+											<% thirdvalue.each do |fourthkey, fourthvalue| %>
+												<% next if fourthkey == 'url' %>
+												<% next if fourthkey == 'extrahtml' %>
+												<li><a href="<%= fourthvalue.url %>"><%= fourthkey %><% if fourthvalue.extrahtml %> <%= fourthvalue.extrahtml%><% end %></a></li>
+											<% end %>
+										</ul>
+									<% end %>
+							<% end %>
+						</ul>
+					<% end %>
+				<% end %>
+			</ul>
+			<% end %>
+		</li>
+  	<% end %>
+ </ul>
+</nav>

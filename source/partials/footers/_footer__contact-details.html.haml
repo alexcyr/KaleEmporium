@@ -1,0 +1,22 @@
+.contact-details
+  - if data.site.defaults.businessaddress || data.site.defaults.phone || data.site.defaults.businessemail
+    %h4 Contact Us
+    %ul.contact
+      - if data.site.defaults.businessaddress
+        %li
+          %p.lightGrey
+            %i.fa.fa-map-marker
+            %strong Address:
+            = data.site.defaults.businessaddress
+      - if data.site.defaults.businessphone
+        %li
+          %p.lightGrey
+            %i.fa.fa-phone
+            %strong Phone:
+            = data.site.defaults.businessphone
+      - if data.site.defaults.businessemail
+        %li
+          %p.lightGrey.leftAlign
+            %i.fa.fa-envelope
+            %strong Email:
+            %a{:href => "mailto:#{data.site.defaults.businessemail}"}= data.site.defaults.businessemail

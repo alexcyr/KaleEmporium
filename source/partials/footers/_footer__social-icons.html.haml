@@ -1,0 +1,15 @@
+- if data.site.defaults.facebookurl || data.site.defaults.twitterurl || data.site.defaults.linkedinurl
+  %h4 Follow Us
+  %ul.social-icons
+    - if data.site.defaults.facebookurl
+      %li.social-icons-facebook
+        %a{:href => data.site.defaults.facebookurl, :target => "_blank", :title => "Facebook"}
+          %i.fa.fa-facebook
+    - if data.site.defaults.twitterurl
+      %li.social-icons-twitter
+        %a{:href => data.site.defaults.twitterurl, :target => "_blank", :title => "Twitter"}
+          %i.fa.fa-twitter
+    - if data.site.defaults.linkedinurl
+      %li.social-icons-linkedin
+        %a{:href => data.site.defaults.linkedinurl, :target => "_blank", :title => "Linkedin"}
+          %i.fa.fa-linkedin

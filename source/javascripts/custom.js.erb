@@ -1,0 +1,49 @@
+
+	// Map Markers
+	var mapMarkers = [
+	<% data.locations.each do | key, value| %>
+	<% if key == 'initialmapview' %>
+		<% next %>
+	<% end %>
+	{
+		address: "<%= value.address %>",
+		html: "<strong><%= key %></strong><br><%= value.address%><br><br><a href='#' onclick='mapCenterAt({latitude: <%= value.latitude%>, longitude: <%= value.longitude%>, zoom: 16}, event)'>[+] zoom here</a>",
+		icon: {
+			image: "<% if value.image %><%= value.image %><%else%>images/pin.png<%end%>",
+			iconsize: [26, 46],
+			iconanchor: [12, 46]
+		}
+	},
+	<% end %>
+	];
+
+	// Map Initial Location
+	var initLatitude = <%= data.locations.initialmapview.latitude%>;
+	var initLongitude = <%= data.locations.initialmapview.longitude%>;
+
+	// Map Extended Settings
+	var mapSettings = {
+		controls: {
+			draggable: (($.browser.mobile) ? false : true),
+			panControl: true,
+			zoomControl: true,
+			mapTypeControl: true,
+			scaleControl: true,
+			streetViewControl: true,
+			overviewMapControl: true
+		},
+		scrollwheel: false,
+		markers: mapMarkers,
+		latitude: initLatitude,
+		longitude: initLongitude,
+		zoom: <%= data.locations.initialmapview.zoom%>
+	};
+
+	var map = $("#googlemaps").gMap(mapSettings);
+
+	// Map Center At
+	var mapCenterAt = function(options, e) {
+		e.preventDefault();
+		$("#googlemaps").gMap("centerAt", options);
+	}
+

@@ -1,0 +1,17 @@
+<section class="section section-primary mb-none">
+	<div class="container">
+		<div class="row">
+
+			<div class="counters counters-text-light">
+				<% data.counters.each do |key, value| %>
+					<div class="col-md-3 col-sm-6">
+						<div class="counter">
+							<strong data-to="<%= value.value %>"<%if value.append%>data-append="<%= value.append %>"<% end%>>0</strong>
+							<label><%= value.label %></label>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>

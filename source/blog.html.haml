@@ -1,0 +1,52 @@
+---
+pageable: true
+per_page: 10
+layout: blog_layout
+blog: "blog"
+---
+
+=content_for :layout_header do
+	%section.section.section-default.section-center#header__blog-index
+		.container
+			.row
+				.col-md-12
+					%h2.mb-none The EAM Blog
+					%p.mb-none Sales Tips, Tactics, and Tools for High Performers
+
+= content_for :blog_posts do
+	%div#posts
+		- page_articles.each_with_index do |article, i|
+			%article.post.post-large
+				.post-image.single
+				- if article.data["banner_image"]
+					%img.img-thumbnail{:alt => "", :src => article.data["banner_image"]}
+				.post-date
+					%span.day= article.date.strftime("%d")
+					%span.month= article.date.strftime("%b")
+				.post-content
+					%h1
+						= link_to article.title, article
+					%p= article.summary(250)
+					.post-meta
+						%span
+							%i.fa.fa-user
+							By
+							%span= article.data["author"]
+						%span
+							%i.fa.fa-tag
+								- article.tags.each do |tag|
+									%span= tag
+						= link_to "Read More", article, {class: "btn btn-md btn-primary pull-right"}
+
+		- if paginate && num_pages > 1
+			%ul.pagination.pagination-lg.pull-right
+				- if prev_page
+					%li
+						%p= link_to '«', prev_page
+				- if next_page
+					%li
+						%p= link_to '»', next_page
+
+= content_for :sidebar do
+	= partial "partials/sidebar/sidebar-default"
+

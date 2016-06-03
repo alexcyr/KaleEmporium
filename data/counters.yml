@@ -1,0 +1,24 @@
+1: 
+ icon: fa fa-cloud-upload
+ value: 387
+ label: Deploys in the Last year
+ benefit: We ship... A lot!
+ append: +
+
+2:
+ icon: fa fa-certificate
+ value: 20
+ label: Years Website Experience
+ benefit: We know how to deliver sites.
+ append: +
+3:
+ icon: fa fa-briefcase
+ value: 12 
+ label: Speaking Engagements
+ benefit: We are renowned experts.
+4:
+ icon: fa fa-bullhorn
+ value: 70
+ label: Blog Posts
+ benefit: We help share our expertise.
+ append: +

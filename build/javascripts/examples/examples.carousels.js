@@ -1,0 +1,1 @@
+(function(e){"use strict";e("#carousel").owlCarousel({loop:!0,responsive:{0:{items:1},479:{items:1},768:{items:2},979:{items:3},1199:{items:6}},navText:[],margin:10,autoWidth:!1,items:6}),e("#videos").owlCarousel({items:1,merge:!0,loop:!0,margin:10,video:!0,lazyLoad:!0,center:!0,responsive:{480:{items:2},600:{items:4}}})}).apply(this,[jQuery]);

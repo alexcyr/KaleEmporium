@@ -1,0 +1,8 @@
+---
+title: Pass Me My Slurpee, please
+date: 2016-01-29 22:24 UTC
+tags:
+author: Emily Parks, Recruitment Manager
+---
+
+We've all been there: Last minute Christmas shopping or that deadline quickly approaching. There must be lack of time, right? WRONG. My boss always jokes that I work 4 hours a week…It's actually 5, Brandon. But seriously when people tell me the amount of hours they work during interviews are they actually being productive? Am I supposed to be impressed? I mean the stock market never sleeps so we shouldn't either? Wrong again. Maybe if every one took a step back and realized that more time doesn't mean more productivity or money. Take the concept of food for example, eating more of it doesn't taste better, it just makes one fuller. So, I'll admit it I probably don't work 40 hours a week but I'm still successful in my industry. I actually prefer to save more work for certain days and less for others. The sales industry is always churning, a deal and a handshake constantly being made. But how am I successful at what I do if I'm not working the expected hours? First off I take breaks and A LOT of them. Most people seclude themselves at their cubicle, office or if in a more open area talk to their neighbor. I'm up at least 15-20 times a day, walking the halls, going outside or networking randomly at the Marriot hotel next door. After my shenanigans I work in increments of half hour periods or less. That's what gets me to be productive. I know that meetings exist and sometimes those take hours but besides that I've learned the importance of taking countless breaks increases ones work environment and productivity, but hey, that's just me.

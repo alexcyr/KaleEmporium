@@ -1,0 +1,41 @@
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-3">
+				<%= partial "partials/footers/footer__newsletter-signup" %>
+			</div>
+			
+			<div class="col-md-4">
+				<%= partial "partials/footers/footer__contact-details" %>
+			</div>
+			<div class="col-md-3">
+				<%= partial "partials/footers/footer__recent-posts", locals: {partial_id: "footer__recent-posts"}  %>
+			</div>
+			<div class="col-md-2">
+				<%= partial "partials/footers/footer__social-icons"%>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<a href="/" class="logo">
+						<img alt="<%= data.site.defaults.companyname %>" class="img-responsive" src="/images/logos/eam_staffing_logo.png">
+					</a>
+				</div>
+				<div class="col-md-6">
+					<p class="lightGrey">© Copyright <%= Time.now.year %>. All Rights Reserved.</p>
+				</div>
+				<div class="col-md-4">
+					<nav id="sub-menu">
+						<ul>
+							<li><a href="/contact-us">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

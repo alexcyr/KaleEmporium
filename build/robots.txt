@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Sitemap: http://eamstaffing.com/sitemap.xml
+
+Disallow: /thanks/

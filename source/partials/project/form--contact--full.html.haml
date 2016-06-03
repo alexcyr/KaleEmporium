@@ -1,0 +1,20 @@
+- emailtoken = data.site.defaults.cognitelabsemailtoken
+
+%form#contactForm{:action => "http://emailrouter.cognitelabs.com/user/#{emailtoken}", :method => "POST"}
+  .row
+    .form-group
+      .col-md-6
+        %label Your name *
+        %input#name.form-control{"data-msg-required" => "Please enter your name.", :maxlength => "100", :name => "name", :required => "", :type => "text", :value => ""}
+      .col-md-6
+        %label Your email address *
+        %input#email.form-control{"data-msg-email" => "Please enter a valid email address.", "data-msg-required" => "Please enter your email address.", :maxlength => "100", :name => "email", :required => "", :type => "email", :value => ""}
+        %input{:name => "next", :type => "hidden", :value => "#{data.site.defaults.deployroot}/contact"}
+  .row
+    .form-group
+      .col-md-12
+        %label Message *
+        %textarea#message.form-control{"data-msg-required" => "Please enter your message.", :maxlength => "5000", :name => "message", :required => "", :rows => "10"}
+  .row
+    .col-md-12
+      %input.btn.btn-primary.btn-lg.mb-xlg{"data-loading-text" => "Loading...", :type => "submit", :value => "Send Message"}

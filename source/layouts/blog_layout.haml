@@ -1,0 +1,19 @@
+!!!
+%head
+  = partial "partials/scripts/scripts_head-default"
+
+%body{class: page_classes}
+  = partial "partials/headers/header-default"
+  = yield_content :layout_header
+  
+  .container
+    .row
+      .col-md-9
+        .blog-posts#blog-posts
+          = yield_content :blog_posts
+      .col-md-3
+        %aside.sidebar#sidebar
+          = yield_content :sidebar
+
+  = partial "partials/footers/footer-default"
+  = partial "javascripts"

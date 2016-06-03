@@ -1,0 +1,14 @@
+%form#contactForm{:action => "http://emailrouter.cognitelabs.com/user/#{emailtoken}", :method => "POST"}
+	.row
+		.form-group
+			.col-md-12
+				%label Your name *
+				%input#name.form-control.darkInput.white{"data-msg-required" => "Please enter your name.", :maxlength => "100", :name => "name", :required => "", :type => "text", :value => ""}
+			.col-md-12
+				%label Your email address *
+				%input#email.form-control.darkInput.white{"data-msg-email" => "Please enter a valid email address.", "data-msg-required" => "Please enter your email address.", :maxlength => "100", :name => "email", :required => "", :type => "email", :value => ""}
+				%input#message-hidden{:name => "message", :type => "hidden", :value => "I filled out the form on your homepage & need help finding a job!"}/
+				%input{:name => "next", :type => "hidden", :value => "#{data.site.defaults.deployroot}/contact"}
+	.row
+		.col-md-12
+			%input.btn.btn-primary.btn-lg.mb-xlg{"data-loading-text" => "Loading...", :type => "submit", :value => "Send Message"}

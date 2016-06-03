@@ -1,0 +1,17 @@
+<section id="contact-form-main">
+	<div class="container">
+		<div class="mt-sm">
+			<div class="col-md-6">
+
+				<div class="alert alert-success hidden" id="contactSuccess">
+					<strong>Success!</strong> Your message has been sent to us.
+				</div>
+
+				<div class="alert alert-danger hidden" id="contactError">
+					<strong>Error!</strong> There was an error sending your message.
+				</div>
+			</div>
+			<%= partial "partials/project/form--contact", locals: {emailtoken: data.site.defaults.cognitelabsemailtoken} %>
+		</div>
+	</div>
+</section>

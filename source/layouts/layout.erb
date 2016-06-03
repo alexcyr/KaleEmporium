@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= partial "partials/scripts/scripts_head-default" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= partial "partials/headers/header-default" %>
+    <%= yield %>
+    <%= partial "partials/footers/footer-default" %>
+    <%= partial "javascripts" %>
+  </body>
+</html>

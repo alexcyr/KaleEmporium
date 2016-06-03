@@ -1,0 +1,59 @@
+---
+title: Sitemap | Cognite Labs
+---
+<div role="main" class="main">
+	<section class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="breadcrumb">
+						<li><a href="#">Home</a></li>
+						<li class="active">Pages</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Sitemap</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-4">
+				<ul class="nav nav-list mb-xl">
+					<% pages = sitemap.resources.find_all{|p| p.source_file.match(/\.html/) && !p.data.noindex == true && p.data.title } %>
+					<% pages.each do |page| %>
+						<li><a href="<%= page.destination_path %>"><%= page.data.title %></a></li>
+					<% end %>
+					
+					<% #<li>
+						#<a href="#">About Us</a>
+						#<ul>
+						#	<li><a href="#">About Us</a></li>
+						#	<li><a href="#">About Me</a></li>
+						#</ul>
+					#</li> 
+					%>
+					</ul>
+			</div>
+
+			<div class="col-md-6 col-md-offset-2 hidden-xs">
+				<h2 class="mb-lg">Who <strong>We Are</strong></h2>
+				<p class="lead">Small business owners who are curious, thoughtful, helpful, and smart.</p>
+				<ul class="list list-icons mt-xl">
+					<li><i class="fa fa-check"></i>We want you to succeed.</li>
+					<li><i class="fa fa-check"></i>We want you 100% satisfied.</li>
+					<li><i class="fa fa-check"></i>We want your website to be a source of joy and revenue.</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>

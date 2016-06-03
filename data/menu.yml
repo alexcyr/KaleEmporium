@@ -1,0 +1,14 @@
+home:
+  url: '/'
+positions:
+ url: '/positions'
+employers:
+ url: '#'
+ recruiting:
+  url: '/recruiting'
+ prospecting:
+  url: '/prospecting'
+blog:
+ url: '/blog'
+contact:
+ url: '/contact-us'

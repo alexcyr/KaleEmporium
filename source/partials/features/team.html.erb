@@ -1,0 +1,56 @@
+<section >
+	<h1><a style="padding-top:150px;" id="Services" > </a></h1>
+	<div class="container">
+		<div class="row mt-xlg">
+			<div class="col-md-8">
+				<h2 class="heading-primary">Our <strong>Services</strong></h2>
+				<p>Using our proprietary 24 step business acceleration process, Common Wealth Enterprises assists its portfolio companies and clients in organizational design, operational strategy, and project management.<br><br>
+				Let us help:</p>
+			</div>
+		</div>
+		
+		
+		<div class="row mb-xlg">
+			<% data.team.each do | key, value| %>
+			<div class="col-md-4 col-sm-6 col-xs-12" style="margin-bottom:3%;" >
+				<span class="thumb-info thumb-info-hide-wrapper-bg" style="background-color:#F8F8F8;">
+					<span class="thumb-info-wrapper">
+						<a href="<%= value.link %>">
+							<img src="<%= value.picture %>" class="img-responsive"  alt="">
+							
+						</a>
+					</span>
+					<span class="thumb-info-caption">
+						
+								<h5 style="margin:0;"><span class="thumb-info-social-icons"" style="margin:0; padding-bottom:0;"><%= key %></span></h5>
+						
+						<span class="thumb-info-caption-text"><%= value.description %></span>
+						<span class="thumb-info-social-icons">
+							
+							
+						
+						</span>
+						
+						<div class=" text-center" style="margin-bottom:10%;">
+							<a class="tp-caption customin btn btn-lg btn-primary main-button" data-hash data-hash-offset="60" href="#Contact"
+						data-x="center" data-hash-offset="60"  
+						data-y="100" 
+						>
+							Contact Us to Learn More
+					</a>
+						</div>
+							
+					</span>
+				</span>
+			</div>
+			<% end %>
+		</div>
+		<div class="row mt-xlg" >
+			<div class="col-md-8">
+				
+				<p>Driving sustainable change is not possible without first bridging the gap between vision and execution. We'll work closely with you to eliminate this gap and maximize impact.</p>
+			</div>
+		</div>
+		
+	</div>
+</section>

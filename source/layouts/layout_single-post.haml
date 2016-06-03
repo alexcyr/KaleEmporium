@@ -1,0 +1,44 @@
+!!!
+%html
+  %head
+    = partial "partials/scripts/scripts_head-default"
+
+  %body{class: page_classes}
+    = partial "/partials/headers/header-default"
+    %section.section.section-default.section-center#header__blog-index
+      .container
+        .row
+          .col-md-12
+            %h2.mb-none The EAM Blog
+            %p.mb-none Sales Tips, Tactics, and Tools for High Performers
+
+    .container
+      .row
+        .col-md-9
+          .blog-posts#blog-post
+            %article.post.post-large
+              - if current_article.data["banner_image"]
+                .post-image.single
+                  %img.img-thumbnail{:alt => "", :src => current_article.data["banner_image"]}
+              .post-date
+                %span.day= current_article.date.strftime("%d")
+                %span.month= current_article.date.strftime("%b")
+              .post-content
+                %h1
+                  = current_article.title
+                = yield
+                .post-meta
+                  %span
+                    %i.fa.fa-user
+                    By
+                    %span= current_article.data["author"]
+                  %span
+                    %i.fa.fa-tag
+                      - current_article.tags.each do |tag|
+                        %span= tag
+        .col-md-3
+          %aside.sidebar#sidebar
+            = partial "partials/sidebar/sidebar-default"
+
+    = partial "/partials/footers/footer-default"
+    = partial "/javascripts"

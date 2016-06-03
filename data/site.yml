@@ -1,0 +1,23 @@
+defaults:
+ title: 'EAM Staffing & Recruiting'
+ description: Set the default description in data/site.yml or in the frontmatter.
+ keywords: Set the default keywords in data/site.yml or in the frontmatter.
+ author: Set the default author in data/site.yml or in the frontmatter.
+ favicon: /images/favicon.ico
+ appletouchicon: /images/apple-touch-icon.png
+ fonts: https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,700,300
+ facebookurl: https://www.facebook.com/EAMStaffing/
+ twitterurl: https://twitter.com/eamstaffing
+ linkedinurl: https://www.linkedin.com/company/northern-metals-inc-
+ businessaddress: 100 West Big Beaver Rd., Suite 110 Troy, MI 48084
+ businessphone: 248-469-4000
+ businessemail: admin@eamstaffing.com
+ showlatesttweets: true
+ shownewslettersignup: true
+ logourl: /images/logos/eam_staffing_logo.png
+ companyname: EAM Staffing & Recruiting
+ googleanalytics: false
+ deployroot: "http://eamstaffing.com"
+ cognitelabsemailtoken: 5fa7e95a-4ad0-45ff-94a9-37a7523ab88b # email tokens from http://samdobson.github.io/fwdform/ use curl to get a token like this: curl --data "email=t@blah.com" http://emailrouter.cognitelabs.com/register mandrill account is dave@cognitelabs.com and heroku is smithd98@gmail.com
+ # Production Token: 5d151d8d-8db9-4370-bbd8-12776f899e23
+
