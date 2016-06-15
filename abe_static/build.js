@@ -14,13 +14,39 @@ builder.buildStatic('src/js/index.js', 'dist/js/index.js', {minify: true})
     console.log('build err');
     console.log(err);
   });
-/*
-builder
-.bundle('src/js/project.js', 'build/outfile.js')
-.then(function() {
-  console.log('Build complete');
-})
-.catch(function(err) {
-  console.log('Build error');
-  console.log(err);
-}); */
+
+builder.buildStatic('src/js/about.js', 'dist/js/about.js', {minify: true})
+  .then(function() {
+    console.log('about build complete');
+  })
+  .catch(function(err) {
+    console.log('build err');
+    console.log(err);
+  });
+
+builder.buildStatic('src/js/dinners.js', 'dist/js/dinners.js', {minify: true})
+  .then(function() {
+    console.log('dinners build complete');
+  })
+  .catch(function(err) {
+    console.log('build err');
+    console.log(err);
+  });
+
+builder.buildStatic('src/js/volunteer.js', 'dist/js/volunteer.js', {minify: true})
+  .then(function() {
+    console.log('volunteer build complete');
+  })
+  .catch(function(err) {
+    console.log('build err');
+    console.log(err);
+  });
+
+builder.buildStatic('src/js/partners.js', 'dist/js/partners.js', {minify: true})
+  .then(function() {
+    console.log('partners build complete');
+  })
+  .catch(function(err) {
+    console.log('build err');
+    console.log(err);
+  });
