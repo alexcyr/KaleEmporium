@@ -1,5 +1,5 @@
 System.config({
-  baseURL: "/ke/abe_static",
+  baseURL: "/ke_fork/abe_static",
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {

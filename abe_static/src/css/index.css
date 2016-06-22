@@ -1,0 +1,13 @@
+.container-fluid .row {max-width: 120rem; margin: 0 auto;}
+
+h1 {font-family: Caveat Brush; font-size: 5.1rem; color: #282835;}
+h2 {font-family: Caveat Brush; font-size: 4.2rem; color: #282835;}
+h6 {font-family: Didact Gothic; font-size: 1.6rem; color: #000; }
+
+body {background-image: url("../../assets/images/paper-texture_@2X.png");}
+
+header nav a {float: right; padding: 1rem 2.5rem; color: #000;
+	font-size:1.6rem; font-family: Didact Gothic;
+}
+
+#mission-dinner {background-color: #fff;}
