@@ -1,13 +1,51 @@
-.container-fluid .row {max-width: 120rem; margin: 0 auto;}
+.container-fluid .row {max-width: 120rem; margin: 8rem auto;}
+.stretch-banner .row {margin: 0 auto;}
+.container-fluid .row.stretch {width: 100%;}
+.container {max-width:120rem;}
+#home .container-fluid {padding-left: 0rem; padding-right: 0rem;}
 
-h1 {font-family: Caveat Brush; font-size: 5.1rem; color: #282835;}
-h2 {font-family: Caveat Brush; font-size: 4.2rem; color: #282835;}
-h6 {font-family: Didact Gothic; font-size: 1.6rem; color: #000; }
-
-body {background-image: url("../../assets/images/paper-texture_@2X.png");}
-
-header nav a {float: right; padding: 1rem 2.5rem; color: #000;
-	font-size:1.6rem; font-family: Didact Gothic;
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
 
-#mission-dinner {background-color: #fff;}
+#home h1 {font-family: Caveat Brush; font-size: 5.1rem; color: #282835;}
+h2 {font-family: Caveat Brush; font-size: 4.2rem; color: #282835;}
+h6 {font-family: Didact Gothic; font-size: 1.6rem; color: #000; }
+p {font-family: Didact Gothic; font-size: 2rem; color: #000;}
+body {background-image: url("../../assets/images/paper-texture_@2X.png");}
+
+#main-header-container {background-color: #fff;}
+
+header#main {padding: .75rem 0;}
+
+header nav a {float: right; padding: 1rem 2rem; color: #000;
+	font-size:1.6rem; font-family: Didact Gothic;
+}
+header nav a:hover {background-color: #8DC63F; color: #fff; text-decoration: none;}
+
+.stretch-banner {background-color: rgba(255,255,255, .7);
+	padding-bottom: 2.5rem; padding-top:2.5rem;
+}
+
+.main-content {background-color: #fff; padding-top:2.5rem; padding-bottom: 2.5rem;}
+
+#mission h1 {font-family: Caveat Brush; font-size: 5.1rem; color: #282835;}
+
+.sap {font-family: Caveat Brush; font-size: 4.2rem; color: #282835;}
+
+.color-header {font-family: Caveat Brush; font-size: 5.1rem; color: #8DC63F;}
+
+a.btn {font-family: Didact Gothic; font-size: 2rem; color: #fff; 
+	border-radius: 1.6rem; background-color: #8DC63F; padding: 1rem;
+}
+
+
+#partners ul {list-style: none;}
+
+#footer-content {background-image: url("../../assets/images/banner.png");
+	background-size: cover;
+}
+#footer-content a {margin: 5rem 5rem; font-family: Didact Gothic; color:#8dC63F;
+	font-size: 2rem;
+}
