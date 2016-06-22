@@ -34,7 +34,7 @@ header nav a:hover {background-color: #8DC63F; color: #fff; text-decoration: non
 
 .sap {font-family: Caveat Brush; font-size: 4.2rem; color: #282835;}
 
-.color-header {font-family: Caveat Brush; font-size: 5.1rem; color: #8DC63F;}
+#home h1.color-header {font-family: Caveat Brush; font-size: 5.1rem; color: #8DC63F;}
 
 a.btn {font-family: Didact Gothic; font-size: 2rem; color: #fff; 
 	border-radius: 1.6rem; background-color: #8DC63F; padding: 1rem;
